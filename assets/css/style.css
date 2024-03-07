@@ -1,0 +1,153 @@
+/* Colores
+● #212529;
+● #fff o var(--white);
+● #e83e8c o var(--pink);
+● #17a2b8 o var(--info)
+
+font-family: "Open Sans", sans-serif;
+*/
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0rem;
+
+}
+
+/* ------------------ NAVBAR ------------------ */
+
+.navbar {
+  padding: 2rem;
+  background-color: #e83e8c;
+  /* height: 50px; */
+}
+
+.navbar-collapse {
+  background-color: #e83e8c;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+  z-index: 1;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+
+.navbar img {
+  max-width: 100px;
+}
+
+.navbar li a {
+  color: #fff;
+  font-weight: normal;
+}
+
+
+
+/* ------------ NUESTROS PRODUCTOS ------------ */
+
+.nuestros-productos {
+  padding: 50px;
+}
+
+.nuestros-productos h1 {
+  font-size: 60px;
+  color: #707070;
+  font-weight: bold;
+  margin-bottom: 77px;
+}
+
+.carta-producto {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------- METODOS DE PAGO ------------- */
+
+.metodos-pago {
+  background-color: #17a2b8;
+  margin-top: 10px;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.metodos-pago h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 6rem;
+}
+
+.metodos-pago i {
+  color: #fff;
+  font-size: 60px;
+  margin: 0 15px;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  background-color: #e83e8c;
+  height: 184px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.footer-logo {
+  height: 100px;
+  width: 53px;
+  margin: 30px
+}
+
+
+
+/* ------------------- MEDIA ------------------ */
+
+@media screen and (max-width: 767px) {
+  .metodos-pago {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1051px) {
+  .metodos-pago {
+    flex-wrap: wrap;
+  }
+  .metodos-pago h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    min-height: 184px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nuestros-productos h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
